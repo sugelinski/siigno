@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Descubra seu signo</title>
+  <meta name="description" content="Informe sua data de nascimento e veja as principais características do seu signo.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home">
+  <main class="home-layout">
+    <section class="intro">
+      <h1>Qual é o seu signo?</h1>
+      <p class="lead">Digite sua data de nascimento e veja o elemento, o planeta regente, as qualidades e as afinidades do seu signo.</p>
+
+      <form id="form-signo" novalidate>
+        <label for="data">Data de nascimento</label>
+        <div class="form-row">
+          <input type="date" id="data" name="data" min="1900-01-01" required aria-describedby="erro">
+          <button type="submit" class="btn">Ver meu signo</button>
+        </div>
+        <p id="erro" class="erro" role="alert" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="roda-area" aria-label="Roda dos doze signos">
+      <div class="roda" id="roda">
+        <div class="roda-anel" id="roda-anel"></div>
+        <div class="roda-centro" aria-live="polite">
+          <span class="roda-centro-simbolo" id="centro-simbolo">✦</span>
+          <span class="roda-centro-nome" id="centro-nome">Escolha uma data</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

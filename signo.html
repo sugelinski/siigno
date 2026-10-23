@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seu signo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="resultado">
+  <main class="resultado-layout">
+    <p class="voltar-topo"><a href="index.html">Consultar outra data</a></p>
+
+    <p id="estado" class="estado" role="status">Consultando as estrelas…</p>
+
+    <article id="signo" hidden>
+      <header class="signo-cabecalho">
+        <span class="signo-simbolo" id="simbolo" aria-hidden="true"></span>
+        <div>
+          <p class="signo-nascimento" id="nascimento"></p>
+          <h1 id="nome"></h1>
+          <p class="signo-periodo" id="periodo"></p>
+        </div>
+      </header>
+
+      <p class="signo-descricao" id="descricao"></p>
+
+      <dl class="fatos">
+        <div><dt>Elemento</dt><dd id="elemento"></dd></div>
+        <div><dt>Modalidade</dt><dd id="modalidade"></dd></div>
+        <div><dt>Planeta regente</dt><dd id="regente"></dd></div>
+        <div><dt>Cor</dt><dd><span class="amostra" id="amostra"></span><span id="cor"></span></dd></div>
+        <div><dt>Pedra</dt><dd id="pedra"></dd></div>
+        <div><dt>Dia da semana</dt><dd id="dia"></dd></div>
+        <div><dt>Números da sorte</dt><dd id="numeros"></dd></div>
+      </dl>
+
+      <div class="duas-colunas">
+        <section>
+          <h2>Qualidades</h2>
+          <ul class="lista" id="qualidades"></ul>
+        </section>
+        <section>
+          <h2>Pontos de atenção</h2>
+          <ul class="lista" id="desafios"></ul>
+        </section>
+      </div>
+
+      <section>
+        <h2>Combina com</h2>
+        <ul class="tags" id="compatibilidade"></ul>
+      </section>
+
+      <a class="btn btn-secundario" href="index.html">Consultar outra data</a>
+    </article>
+  </main>
+
+  <script src="js/signo.js"></script>
+</body>
+</html>
